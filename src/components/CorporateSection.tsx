@@ -33,7 +33,7 @@ const CorporateSection = () => {
             <span className="text-gradient-ped">Nós aceleramos a sua operação.</span>
           </h2>
           <p className="text-lg max-w-3xl mx-auto" style={{ color: "hsl(215 20% 75%)" }}>
-            O braço educacional do Hub WiSa. Treinamentos estratégicos para nivelar
+            O braço educacional da <strong>WiSa</strong>. Treinamentos estratégicos para nivelar
             sua equipe, acabar com o retrabalho e escalar vendas. <br></br>
             <strong> Sem equipe preparada, qualquer estratégia quebra. </strong>
           </p>

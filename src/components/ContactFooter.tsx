@@ -1,4 +1,4 @@
-import { MessageSquare, MessageCircle, Mail, Phone, ExternalLink } from "lucide-react";
+import { MessageSquare, MessageCircle, Mail, Phone, ExternalLink, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WHATSAPP_LINK = "https://wa.me/553231980374";
@@ -23,7 +23,7 @@ const ContactFooter = () => {
               </div>
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "hsl(0 0% 100%)" }}>
-              Conheça o Hub WiSa
+              Sobre a WiSa Inteligência para Negócios
             </h3>
             <p className="text-base mb-8 max-w-2xl mx-auto" style={{ color: "hsl(215 20% 70%)" }}>
               Somos um ecossistema de inteligência B2B focado em crescimento escalável. 
@@ -31,7 +31,7 @@ const ContactFooter = () => {
             </p>
             <Button size="lg" asChild className="text-base px-8 py-6 rounded-lg font-semibold" style={{ backgroundColor: "hsl(145 65% 28%)", color: "white" }}>
               <a href="https://hubwisa.com.br" target="_blank" rel="noopener noreferrer">
-                Acessar Hub WiSa
+                Acessar Nosso Site
                 <ExternalLink className="w-4 h-4 ml-2" />
               </a>
             </Button>
@@ -63,11 +63,11 @@ const ContactFooter = () => {
               onClick={async () => {
                 console.log('Opening email client');
                 try {
-                  window.location.href = 'mailto:suporte@portaleducacionaldigital.com.br';
+                  window.location.href = 'mailto:suporte@hubwisa.com.br';
                   // Fallback: copiar email se não abrir
                   setTimeout(async () => {
-                    await navigator.clipboard.writeText('suporte@portaleducacionaldigital.com.br');
-                    alert('Email copiado para a área de transferência: suporte@portaleducacionaldigital.com.br');
+                    await navigator.clipboard.writeText('suporte@hubwisa.com.br');
+                    alert('Email copiado para a área de transferência: suporte@hubwisa.com.br');
                   }, 500);
                 } catch (error) {
                   console.error('Error opening email client:', error);
@@ -84,7 +84,7 @@ const ContactFooter = () => {
       {/* Footer */}
       <footer className="bg-foreground py-12">
         <div className="container max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div>
               <img
@@ -120,9 +120,34 @@ const ContactFooter = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-ped-green-light" />
-                  <a href="mailto:suporte@portaleducacionaldigital.com.br" className="hover:text-ped-green-light transition-colors">suporte@portaleducacionaldigital.com.br</a>
+                  <a href="mailto:suporte@hubwisa.com.br" className="hover:text-ped-green-light transition-colors">suporte@hubwisa.com.br</a>
                 </li>
               </ul>
+            </div>
+
+            {/* Social Media */}
+            <div>
+              <h4 className="font-semibold mb-4" style={{ color: "hsl(0 0% 90%)" }}>Redes Sociais</h4>
+              <div className="flex gap-4">
+                <a 
+                  href="https://instagram.com/hubwisa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-ped-green-light transition-colors"
+                  style={{ backgroundColor: "hsl(215 30% 20%)" }}
+                >
+                  <Instagram className="w-5 h-5" style={{ color: "hsl(215 20% 65%)" }} />
+                </a>
+                <a 
+                  href="https://facebook.com/hubwisa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-ped-green-light transition-colors"
+                  style={{ backgroundColor: "hsl(215 30% 20%)" }}
+                >
+                  <Facebook className="w-5 h-5" style={{ color: "hsl(215 20% 65%)" }} />
+                </a>
+              </div>
             </div>
           </div>
 

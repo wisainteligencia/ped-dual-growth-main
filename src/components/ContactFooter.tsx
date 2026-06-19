@@ -152,7 +152,7 @@ const ContactFooter = () => {
           </div>
 
           <div className="border-t pt-8 text-center text-sm" style={{ borderColor: "hsl(215 20% 25%)", color: "hsl(215 20% 55%)" }}>
-            <p>© {new Date().getFullYear()} PED – Portal Educacional Digital. Braço educacional do <a href="https://hubwisa.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-ped-green-light transition-colors">Hub WiSa</a>. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} PED – Portal Educacional Digital. Braço educacional da <a href="https://hubwisa.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-ped-green-light transition-colors"><strong>WiSa</strong></a>. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

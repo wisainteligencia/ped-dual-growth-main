@@ -2,7 +2,8 @@ import { MessageSquare, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-const WHATSAPP_LINK = "https://wa.me/5532987094390";
+const WHATSAPP_LINK =
+  "https://wa.me/553231980374?text=Ol%C3%A1%2C%20conheci%20a%20WiSa%20pelo%20Portal%20PED%20e%20gostaria%20de%20atendimento.";
 
 const navItems = [
   { label: "Cursos Profissionalizantes", href: "#cursos" },

@@ -1,8 +1,8 @@
 import { Settings, Target, Bot, MessageSquare, ArrowRight, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const WHATSAPP_LINK = "https://wa.me/5532987094390";
-const GOOGLE_AGENDA= "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ10baEhf2nfYpW2ekiKDw0qe5z_NCfTWJVTiWxzGMgfiazjT929J3HWw0iTm09Qo7cWhZJbFSTT"
+const GOOGLE_AGENDA =
+  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2qc9MFGzl1mCicH3-iZhkmYc3xCDAXOh1giUcARXxPg0e48eNNzHckPILnGdSMNKyHvUc-ijCy";
 
 const trails = [
   {
@@ -33,8 +33,9 @@ const CorporateSection = () => {
             <span className="text-gradient-ped">Nós aceleramos a sua operação.</span>
           </h2>
           <p className="text-lg max-w-3xl mx-auto" style={{ color: "hsl(215 20% 75%)" }}>
-            O braço educacional do Hub WiSa. Treinamentos estratégicos para nivelar
-            sua equipe, acabar com o retrabalho e escalar vendas. <br></br>
+            O portal educacional integrado à WiSa Inteligência para Negócios.
+            Treinamentos estratégicos para nivelar sua equipe, acabar com o
+            retrabalho e escalar vendas. <br></br>
             <strong> Sem equipe preparada, qualquer estratégia quebra. </strong>
           </p>
         </div>
